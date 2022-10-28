@@ -1,0 +1,111 @@
+---
+title: Don't forget to change tittle - for this page
+---
+{% import 'src/template/macros.html' as mac %}
+{% include 'src/template/head.html' %}
+
+<body>
+	<div class="wrapper">
+		{% include 'src/template/header.html' %}
+		<main class="main">
+			<div class="container">
+				<div class="py-1 py-md-2 py-lg-4">
+					<div class="display-1">Example typography </div>
+					<h1>H1 example</h1>
+					<h2>H2 example</h2>
+					<h3>H3 example</h3>
+					<h4>H4 example</h4>
+					<h5>H5 example</h5>
+					<h6>H6 example</h6>
+					<p>P example</p>
+				</div>
+			</div>
+			<div class="container">
+				<div class="my-1 my-md-2 my-lg-4">
+					<div class="display-1">Example grid </div>
+					<div class="row">
+						<div class="col-12 col-md-6 col-lg-3">
+							Колонка 1
+						</div>
+						<div class="col-12 col-md-6 col-lg-3">
+							Колонка 2
+						</div>
+						<div class="col-12 col-md-6 col-lg-3">
+							Колонка 3
+						</div>
+						<div class="col-12 col-md-6 col-lg-3">
+							Колонка 4
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="my-1 my-md-2 my-lg-4">
+					<div class="display-1">Example button </div>
+					<button type="button" class="btn btn-primary">Primary</button>
+					<button type="button" class="btn btn-secondary">Secondary</button>
+					<button type="button" class="btn btn-success">Success</button>
+					<button type="button" class="btn btn-danger">Danger</button>
+					<button type="button" class="btn btn-warning">Warning</button>
+					<button type="button" class="btn btn-info">Info</button>
+					<button type="button" class="btn btn-light">Light</button>
+					<button type="button" class="btn btn-dark">Dark</button>
+					<button type="button" class="btn btn-link">Link</button>
+				</div>
+			</div>
+			<div class="container my-1 my-md-2 my-lg-4">
+				<div class="display-1">Example modal </div>
+				<!-- Button trigger modal -->
+				<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+					Launch demo modal
+				</button>
+				<!-- Modal -->
+				<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae minus, quis ratione porro ut rerum cupiditate assumenda, eum voluptas reprehenderit cum praesentium ad sed quam quidem! Sit quis aut eum!</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="display-1">Example carousel </div>
+				<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="https://dummyimage.com/640x360/444/aaa" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="https://dummyimage.com/640x360/333/aaa" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="https://dummyimage.com/640x360/222/aaa" class="d-block w-100" alt="...">
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Предыдущий</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Следующий</span>
+					</button>
+				</div>
+			</div>
+		</main>
+		{% include 'src/template/footer.html' %}
+	</div>
+	{% include 'src/template/includes.html' %}
+</body>
+
+</html>
